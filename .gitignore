@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Database (auto-generated at runtime)
+contacts.db
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
