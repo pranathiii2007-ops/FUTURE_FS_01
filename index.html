@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranathi | AI Developer & Full-Stack Engineer</title>
+  <meta name="description"
+    content="Pranathi – Computer Science student specializing in AI & Full-Stack Development. Explore my projects, skills, and get in touch." />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ==================== LOADER ==================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span>P</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">Pranathi</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Journey</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero">
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Internships &amp; Projects
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Pranathi</span>
+      </h1>
+
+      <div class="hero-subtitle">
+        <span class="static-text">I'm a </span>
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor-blink">|</span>
+        </span>
+      </div>
+
+      <p class="hero-desc">
+        Passionate computer science student specializing in <strong>Artificial Intelligence</strong> &amp;
+        <strong>Full-Stack Development</strong>.
+        I build modern, impactful applications that bridge creativity and technology.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-paper-plane"></i> Let's Talk
+        </a>
+        <a href="resume.pdf" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Download Resume
+        </a>
+
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="2">0</span><span>+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span>+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="3">0</span><span>+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-content" data-aos="fade-up">
+        <h3 class="about-greeting">Who Am I? 👋</h3>
+        <p class="about-bio">
+          I'm <strong class="accent">Pranathi</strong>, a Computer Science student at
+          <strong>Vignan Institute of Information Technology</strong>, specializing in
+          <strong>Artificial Intelligence</strong>. I'm driven by a passion for building
+          meaningful, user-centric applications.
+        </p>
+        <p class="about-bio">
+          I love combining creativity with technical precision — whether it's crafting
+          elegant UIs, writing clean code in Python or Java, or solving algorithmic challenges.
+          My journey is defined by curiosity, consistency, and a commitment to growth.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Visakhapatnam, India</span>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-graduation-cap"></i>
+            <span>B.Tech – CSE (AI)</span>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-heart"></i>
+            <span>AI &amp; Web Development</span>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-language"></i>
+            <span>English, Telugu</span>
+          </div>
+        </div>
+
+        <div class="about-bottom">
+          <div class="about-interests">
+            <span class="interest-tag"><i class="fab fa-python"></i> Python</span>
+            <span class="interest-tag"><i class="fab fa-java"></i> Java</span>
+            <span class="interest-tag"><i class="fas fa-globe"></i> Web Dev</span>
+            <span class="interest-tag"><i class="fas fa-sitemap"></i> DSA</span>
+            <span class="interest-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+          </div>
+          <div class="about-socials-inline">
+            <a href="https://github.com/pranathiii2007-ops" target="_blank" class="social-btn github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pranathi-balabhadra-395346348" target="_blank"
+              class="social-btn linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:pranathiii2007@gmail.com" class="social-btn email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">My Toolkit</p>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-categories" data-aos="fade-up" data-aos-delay="100">
+        <button class="skill-cat-btn active" data-cat="all">All</button>
+        <button class="skill-cat-btn" data-cat="frontend">Frontend</button>
+        <button class="skill-cat-btn" data-cat="programming">Programming</button>
+        <button class="skill-cat-btn" data-cat="other">Other</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+
+        <!-- Frontend -->
+        <div class="skill-card" data-cat="frontend" data-aos="zoom-in">
+          <div class="skill-icon" style="--color:#E34F26"><i class="fab fa-html5"></i></div>
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card" data-cat="frontend" data-aos="zoom-in" data-aos-delay="80">
+          <div class="skill-icon" style="--color:#1572B6"><i class="fab fa-css3-alt"></i></div>
+          <span class="skill-name">CSS3</span>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-card" data-cat="programming" data-aos="zoom-in" data-aos-delay="160">
+          <div class="skill-icon" style="--color:#F7DF1E"><i class="fab fa-js"></i></div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="72"></div>
+          </div>
+          <span class="skill-pct">72%</span>
+        </div>
+
+        <div class="skill-card" data-cat="programming" data-aos="zoom-in" data-aos-delay="240">
+          <div class="skill-icon" style="--color:#3776AB"><i class="fab fa-python"></i></div>
+          <span class="skill-name">Python</span>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+
+        <div class="skill-card" data-cat="programming" data-aos="zoom-in" data-aos-delay="320">
+          <div class="skill-icon" style="--color:#007396"><i class="fab fa-java"></i></div>
+          <span class="skill-name">Java</span>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+          <span class="skill-pct">65%</span>
+        </div>
+
+        <!-- Other -->
+        <div class="skill-card" data-cat="other" data-aos="zoom-in" data-aos-delay="400">
+          <div class="skill-icon" style="--color:#00E87C"><i class="fas fa-sitemap"></i></div>
+          <span class="skill-name">DSA (Conceptual)</span>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="60"></div>
+          </div>
+          <span class="skill-pct">60%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">What I've Built</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/project1.png" alt="PathFinder – AI Career Guidance Platform" loading="lazy" />
+            <div class="project-overlay">
+              <a href="https://ai-pathfinder-alpha.vercel.app/" target="_blank" class="project-link-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/pranathiii2007-ops" target="_blank" class="project-link-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-badge featured-badge">⭐ Featured</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">PathFinder Pro</h3>
+            <p class="project-desc">
+              An AI-powered career guidance platform that helps students navigate their educational and professional
+              paths after 10th and 12th grade using Google Gemini LLM for personalized recommendations.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Gemini AI</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ai-pathfinder-alpha.vercel.app/" target="_blank" class="project-cta">
+                <i class="fas fa-rocket"></i> View Live
+              </a>
+              <a href="https://github.com/pranathiii2007-ops" target="_blank" class="project-cta ghost">
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="images/project2.png" alt="Portfolio Website" loading="lazy" />
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-badge">🎨 UI/UX</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-desc">
+              A fully responsive, animated personal portfolio website built with vanilla HTML, CSS, and JavaScript
+              featuring particle animations, glassmorphism design, and smooth scroll interactions.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Animations</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-cta">
+                <i class="fas fa-eye"></i> View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card coming" data-aos="fade-up" data-aos-delay="200">
+          <div class="coming-soon-content">
+            <div class="coming-icon"><i class="fas fa-hammer"></i></div>
+            <h3>Next Project</h3>
+            <p>Something exciting is in the works. Stay tuned for my next build!</p>
+            <span class="coming-tag">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION / EXPERIENCE ==================== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">My Background</p>
+        <h2 class="section-title">Education <span class="gradient-text">Journey</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline-container">
+
+        <div class="timeline-card" data-aos="fade-right">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>B.Tech – Computer Science (AI)</h3>
+              <span class="timeline-date">2024 – Present</span>
+            </div>
+            <h4 class="timeline-org">Vignan Institute of Information Technology</h4>
+            <p>Pursuing B.Tech in Computer Science with specialization in Artificial Intelligence. Coursework includes
+              Data Structures, Machine Learning, Web Technologies, and AI fundamentals.</p>
+            <div class="timeline-tags">
+              <span>AI/ML</span><span>Web Dev</span><span>Data Structures</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-card" data-aos="fade-left">
+          <div class="timeline-icon">📘</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Intermediate – MPC</h3>
+              <span class="timeline-date">2022 – 2024</span>
+            </div>
+            <h4 class="timeline-org">Ascent Junior College</h4>
+            <p>Completed Intermediate with Mathematics, Physics, and Chemistry (MPC). Developed strong analytical and
+              problem-solving skills that form the foundation of my technical journey.</p>
+            <div class="timeline-tags">
+              <span>Mathematics</span><span>Physics</span><span>Chemistry</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-card" data-aos="fade-right">
+          <div class="timeline-icon">🏫</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Secondary Schooling – 10th Grade</h3>
+              <span class="timeline-date">Until 2022</span>
+            </div>
+            <h4 class="timeline-org">Sri Chaitanya School</h4>
+            <p>Completed 10th grade at Sri Chaitanya, building a strong academic foundation with excellent performance
+              in Science and Mathematics.</p>
+            <div class="timeline-tags">
+              <span>Science</span><span>Mathematics</span><span>Excellence</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATIONS ==================== -->
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">My Credentials</p>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certs-grid certs-grid-centered">
+
+        <div class="cert-card" data-aos="zoom-in">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-info">
+            <h3>C Programming</h3>
+            <p class="cert-issuer"><i class="fas fa-medal"></i> Cisco Networking Academy</p>
+            <p class="cert-desc">Fundamentals of C programming — variables, control flow, functions, pointers, and
+              memory management.</p>
+          </div>
+          <span class="cert-badge">Certified</span>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="cert-icon"><i class="fab fa-html5"></i></div>
+          <div class="cert-info">
+            <h3>HTML, CSS &amp; JavaScript</h3>
+            <p class="cert-issuer"><i class="fas fa-medal"></i> Cisco Networking Academy</p>
+            <p class="cert-desc">Web development fundamentals — building interactive pages with HTML structure, CSS
+              styling, and JavaScript logic.</p>
+          </div>
+          <span class="cert-badge">Certified</span>
+        </div>
+
+        <div class="cert-card achievement" data-aos="zoom-in" data-aos-delay="300">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <div class="cert-info">
+            <h3>AI/ML Virtual Internship</h3>
+            <p class="cert-issuer"><i class="fas fa-star"></i> EduSkills &amp; Cisco</p>
+            <p class="cert-desc">Hands-on virtual internship covering Artificial Intelligence &amp; Machine Learning
+              concepts, tools, and real-world applications through EduSkills in partnership with Cisco.</p>
+          </div>
+          <span class="cert-badge gold">Internship</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">What I Offer</p>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="services-grid services-grid-two">
+
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building responsive, fast, and beautiful websites using modern HTML, CSS, and JavaScript. Clean code with
+            pixel-perfect designs and smooth animations.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+            <li><i class="fas fa-check"></i> Modern UI Layouts</li>
+            <li><i class="fas fa-check"></i> Performance Optimized</li>
+            <li><i class="fas fa-check"></i> Cross-Browser Compatible</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Crafting delightful user experiences with modern design principles — glassmorphism, micro-animations,
+            thoughtful color palettes, and intuitive interfaces.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Visual Design</li>
+            <li><i class="fas fa-check"></i> Animation &amp; Interactions</li>
+            <li><i class="fas fa-check"></i> Color Systems</li>
+            <li><i class="fas fa-check"></i> User-Focused Layouts</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Let's Build Something Great Together</h3>
+          <p>Whether you have a project idea, an internship opportunity, or just want to say hello — my inbox is always
+            open!</p>
+
+          <div class="contact-cards">
+            <a href="mailto:pranathiii2007@gmail.com" class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">pranathiii2007@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/pranathi-balabhadra-395346348" target="_blank" class="contact-card">
+              <div class="contact-card-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">pranathi-balabhadra</span>
+              </div>
+            </a>
+            <a href="https://github.com/pranathiii2007-ops" target="_blank" class="contact-card">
+              <div class="contact-card-icon github"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">pranathiii2007-ops</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            <span>Available for internships &amp; projects</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <form action="https://formspree.io/f/mgonryqz" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration / Internship" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none;">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>Pranathi<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Web Developer &amp; UI/UX Designer building the web, one line of code at a time.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/pranathiii2007-ops" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pranathi-balabhadra-395346348" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:pranathiii2007@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 <span class="accent">Pranathi</span>. Crafted with <span class="heart">❤️</span> and lots of ☕</p>
+        <a href="#home" class="back-to-top" id="backToTop">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
