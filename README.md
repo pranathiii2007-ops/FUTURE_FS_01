@@ -1,4 +1,4 @@
-# Pranathi | AI Developer & Full-Stack Engineer Portfolio
+# Pranathi | Portfolio
 
 Welcome to my personal portfolio repository! This responsive and interactive website showcases my skills, projects, and educational journey. As a passionate Computer Science student specializing in Artificial Intelligence, I build modern, impactful applications that bridge creativity and technology.
 
